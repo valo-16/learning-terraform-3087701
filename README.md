@@ -24,7 +24,7 @@ DevOps Engineer
 
 - Created a terrform user using AWS IAM
 - Linked my Terraform account to my Github account
-- 
+- Spun up an EC2 instance (aka VM)
 
 [lil-course-url]: https://www.linkedin.com/learning/learning-terraform-15575129?dApp=59033956
 [lil-thumbnail-url]: https://cdn.lynda.com/course/3087701/3087701-1666200696363-16x9.jpg
