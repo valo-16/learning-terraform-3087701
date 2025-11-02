@@ -44,7 +44,7 @@ resource "aws_security_group_rule" "blog_http_in" {
   cidr_blocks = ["0.0.0.0/0"]
   # This is set to 0.0.0.0/0 to allow everyone access since it's a public website. Can limit to your own IP if concerned about security.
 
-  aws_security_group_id = aws_security_group.blog.id
+  security_group_id = aws_security_group.blog.id
   # We're telling this rule which group it belongs to.
 }
 
@@ -56,7 +56,7 @@ resource "aws_security_group_rule" "blog_https_in" {
   cidr_blocks = ["0.0.0.0/0"]
   # This is set to 0.0.0.0/0 to allow everyone access since it's a public website. Can limit to your own IP if concerned about security.
 
-  aws_security_group_id = aws_security_group.blog.id
+  security_group_id = aws_security_group.blog.id
   # We're telling this rule which group it belongs to.
 }
 
@@ -68,6 +68,6 @@ resource "aws_security_group_rule" "blog_everything_out" {
   cidr_blocks = ["0.0.0.0/0"]
   # This is set to 0.0.0.0/0 to allow everyone access since it's a public website. Can limit to your own IP if concerned about security.
 
-  aws_security_group_id = aws_security_group.blog.id
+  security_group_id = aws_security_group.blog.id
   # We're telling this rule which group it belongs to.
 }
